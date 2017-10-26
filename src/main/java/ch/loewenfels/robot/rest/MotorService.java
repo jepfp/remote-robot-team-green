@@ -7,6 +7,14 @@ import java.io.IOException;
 
 @Path("motor")
 public class MotorService {
+    
+    @Path("test")
+    @GET
+    @Produces("text/plain")
+    public String test() throws IOException {
+        System.out.println("test");
+        return "test";
+    }
 
     @Path("init")
     @GET
